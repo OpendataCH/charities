@@ -6,7 +6,7 @@ You can find an initial **water dataset** in the `data` folder. This is exported
 
 # Preparation
 
-To update the data file, select the Grid View in Airtable, click the ... menu and choose Download CSV. Rename it and copy into the data folder.
+To update the data file, select the [Grid View](https://airtable.com/tblOl3otffKrCfFVt/viwOmo05mp4EChrFt?blocks=hide) in Airtable (contact Oleg if you need access), click the ... menu and choose Download CSV. Rename it and copy into the data folder.
 
 # License
 
