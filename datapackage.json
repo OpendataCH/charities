@@ -1,32 +1,82 @@
 {
-  "name": "datapackage-boilerplate",
-  "title": "A Boilerplate Data Package",
-  "format": "csv",
-  "datapackage_version": "1.0.0",
-  "last_modified": "2018-01-01",
-  "licenses": [{
-    "name": "ODC-PDDL-1.0",
-    "path": "http://opendatacommons.org/licenses/pddl/",
-    "title": "Open Data Commons Public Domain Dedication and License v1.0"
-  }],
-  "sources": [
-    {
-      "name": "Sample Data Source",
-      "web": "http://www..."
-    }
-  ],
+  "profile": "data-package",
   "resources": [
     {
-      "path": "data/some-good-data.csv",
+      "name": "water-charities",
+      "path": "water.csv",
+      "profile": "tabular-data-resource",
       "schema": {
-        "fields": []
+        "fields": [
+          {
+            "name": "Name",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Mission",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Website",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Donations",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Yearly budget (CHF)",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "Status",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Attachments",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Certification",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Certification Body",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Country",
+            "type": "string",
+            "format": "default"
+          }
+        ]
       }
-    },{
-      "path": "data/the-raw-data.xls"
     }
   ],
-  "maintainers":[{
-    "name": "School of Data CH",
-    "web": "https://www.schoolofdata.ch/"
-  }]
+  "name": "charities",
+  "title": "Charities Open Data",
+  "description": "A schema for collecting open data about charitable organizations across major topical areas.",
+  "homepage": "https://github.com/OpendataCH/charities",
+  "contributors": [
+    {
+      "title": "O Lavrovsky",
+      "role": "author"
+    }
+  ],
+  "version": "1.0.0",
+  "licenses": [
+    {
+      "name": "ODbL-1.0",
+      "title": "Open Data Commons Open Database License 1.0",
+      "path": "http://www.opendefinition.org/licenses/odc-odbl"
+    }
+  ]
 }
